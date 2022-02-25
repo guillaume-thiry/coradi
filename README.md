@@ -1,16 +1,16 @@
-# Coradi Harmonic Analyzer
+---
+youtubeId: lDi9uFcD7XI
+---
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
----
-videoId: 3G4NKzmfC-Q
----
+# Coradi Harmonic Analyzer
 
 Here is the video:
 
-{% include youtube.html id=page.3G4NKzmfC-Q %}
+{% include youtube.html id=page.youtubeId %}
 
 
 And more here:

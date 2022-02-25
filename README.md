@@ -1,12 +1,8 @@
----
-youtubeId: lDi9uFcD7XI
----
-
-## Coradi Harmonic Analyzer
+# Coradi Harmonic Analyzer
 
 Here is the video:
 
-{% include youtube.html id=page.youtubeId %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3G4NKzmfC-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 And more here:

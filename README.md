@@ -10,7 +10,7 @@ videoId: 3G4NKzmfC-Q
 
 Here is the video:
 
-{% include youtube.html id=page.videoId %}
+{% include youtube.html id=page.3G4NKzmfC-Q %}
 
 
 And more here:

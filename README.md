@@ -4,8 +4,11 @@ This video has been made for an History of Science course at École polytechniqu
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/yVqqV-p2aEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-&nbsp;
-&nbsp;
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 
 # More about the maths
 &nbsp;

@@ -6,12 +6,9 @@ This video has been made for an History of Science course at École polytechniqu
 
 <br/><br/>
 <br/><br/>
-<br/><br/>
-<br/><br/>
-<br/><br/>
 
 # More about the maths
-&nbsp;
+<br/><br/>
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -34,6 +31,7 @@ These decompositions are called the [Fourier series](https://en.wikipedia.org/wi
 Conceptually, this result is very strong: any function, if decomposed enough, can be expressed as a sum of periodic basis functions. In a more practictal point of view, the Fourier transform, as part of the broader [Fourier analysis](https://en.wikipedia.org/wiki/Fourier_analysis), has been of paramount importance in the field of signal processing. These formulas are still widely used today in areas such as physics, image processing, statistics, forensics, cryptography, acoustics or optics.
 
 Example usage: given an audio signal, find the [fundamental frequency](https://en.wikipedia.org/wiki/Fundamental_frequency) and the [harmonics](https://en.wikipedia.org/wiki/Harmonic).
+<br/><br/>
 
 ## The difficulty to compute the coefficients
 
@@ -42,6 +40,7 @@ Fourier decompositions (in series or integrals) are only powerful if we can comp
 However, they tend to be impossible to calculate exactly as our function can have an arbitrary shape (even for the periodic case). Consequently, the best we can do in most cases is to approximate them as close as possible to their real values but this requires computational power. Nowadays, computers alleviate this problem with great ease but this was not the case back in time. 
 
 The Coradi analyzer is a engineering solution to this computation problem. It is a sort of mechanical calculator (like the [Pascaline](https://en.wikipedia.org/wiki/Pascal%27s_calculator)) that aims at evaluating the first coefficients of a Fourier series using directly as input the curve of our function. This ingenious invention uses physical and mathematical principles to simulate the real calculation of an integral.
+<br/><br/>
 
 ## Mathematical details
 

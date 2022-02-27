@@ -73,4 +73,4 @@ $$a_n = -\frac{\Delta '}{n} ~~~~~~~~ b_n = \frac{\Delta}{n}$$
 
 
 
-{% include my-gallery.html folder="myfolder" %}
+{% include my-gallery.html folder="img" %}

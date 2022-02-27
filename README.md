@@ -75,5 +75,5 @@ $$a_n = -\frac{\Delta '}{n} ~~~~~~~~ b_n = \frac{\Delta}{n}$$
 
 # Gallery
 
-[![](img/small_0.png)](img/large_0.png)  [![](img/small_1.png)](img/large_1.png)  [![](img/small_20.png)](img/large_2.png)  [![](img/small_3.png)](img/large_3.png)  
+[![](img/small_0.png)](img/large_0.png)  [![](img/small_1.png)](img/large_1.png)  [![](img/small_2.png)](img/large_2.png)  [![](img/small_3.png)](img/large_3.png)  
 

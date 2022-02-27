@@ -45,13 +45,22 @@ Now imagine we are at a certain value of $$x$$ and we make a small move $$dy$$ a
 
 If we sum all these infinitesial moves $$dy$$ along the whole procedure, we end ud with:
 
-$$s = \int_{x=0}^{T}cos(\theta)dy$$
+$$S = \int_{x=0}^{T}cos(\theta)dy$$
 
 But we know the relation between $$x$$ and $$theta$$ for a given pulley of order $$n$$. Furthermore, if the little moves $$dy$$ along the y-axis are done following our function $$f$$ while increasing the $$x$$ value, we have the natural relation $$dy = f'(x)dx$$ where $$f'$$ is the first-order derivative of $$f$$. It comes:
 
-$$s = \int_0^Tcos\left(x\frac{2n\pi}{T}\right)f'(x)dx$$
+$$S = \int_0^Tcos\left(x\frac{2n\pi}{T}\right)f'(x)dx$$
 
 An integration by parts gives:
 
-$$s = \left[cos\left(x\frac{2n\pi}{T}\right)f(x)\right]_0^T - \int_0^Tcos'\left(x\frac{2n\pi}{T}\right)f(x)dx = \int_0^Tsin\left(x\frac{2n\pi}{T}\right)f(x)dx$$
+$$S = \left[cos\left(x\frac{2n\pi}{T}\right)f(x)\right]_0^T - \int_0^Tcos'\left(x\frac{2n\pi}{T}\right)f(x)dx = \frac{2n\pi}{T}\int_0^Tsin\left(x\frac{2n\pi}{T}\right)f(x)dx$$
 
+The first term is zero because of the periodicity. Finally, this integral value is multiplicative constant away from our coefficient $$b_n$$:
+
+$$S = n\pi b_n$$
+
+The second dial, which makes a angle of $$\frac{\pi}{2}$$ with the first one, is used to integrate $$sin(\theta)$$, and gives (with an added minus sign) the same result but for coefficient $$a_n$$. 
+
+In reality, both dials are graduated to take into account the multiplicative constant $$\pi$$. That is, if we name $$\Delta$$ and $$Delta'$$ the differences on both dials between $$x=0$$ and $$x=T$$ for pulley $$n$$, the Fourier coefficients of order $$n$$ are:
+
+$$a_n = -\frac{Delta'}{n} ~~~~ b_n = \frac{Delta}{n}$$

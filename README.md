@@ -8,7 +8,6 @@ This video has been made for an History of Science course at École polytechniqu
 <br/><br/>
 
 # More about the maths
-<br/><br/>
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">

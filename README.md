@@ -70,6 +70,10 @@ The second dial, which makes a angle of $$\dfrac{\pi}{2}$$ with the first one, i
 In reality, both dials are graduated to take into account the multiplicative constant $$\pi$$. That is, if we name $$\Delta$$ and $$\Delta '$$ the differences on both dials between $$x=0$$ and $$x=T$$ for pulley $$n$$, the Fourier coefficients of order $$n$$ are given by:
 
 $$a_n = -\frac{\Delta '}{n} ~~~~~~~~ b_n = \frac{\Delta}{n}$$
+<br/><br/>
+<br/><br/>
 
-[![](img/small_0.png)](img/large_0.png)[![](img/small_1.png)](img/large_1.png)
+# Gallery
+
+[![](img/small_0.png)](img/large_0.png)  [![](img/small_1.png)](img/large_1.png)  [![](img/small_20.png)](img/large_2.png)  [![](img/small_3.png)](img/large_3.png)  
 

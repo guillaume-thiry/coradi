@@ -71,5 +71,5 @@ In reality, both dials are graduated to take into account the multiplicative con
 
 $$a_n = -\frac{\Delta '}{n} ~~~~~~~~ b_n = \frac{\Delta}{n}$$
 
-[![](img/small_0.png)](img/large_0.png)[![](img/large_1.png)](img/large_1.png)
+[![](img/small_0.png)](img/large_0.png)[![](img/small_1.png)](img/large_1.png)
 

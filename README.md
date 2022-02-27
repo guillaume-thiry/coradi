@@ -5,7 +5,7 @@ This video has been made for an History of Science course at École polytechniqu
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/yVqqV-p2aEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-# Mathematical details:
+# Mathematical context:
 
 <script type="text/javascript" async
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -31,5 +31,27 @@ Example usage: given an audio signal, find the [fundamental frequency](https://e
 
 ## The difficulty to compute the coefficients
 
-Fourier decompositions (in series or integral) are only powerful if we can compute with great precision these coefficients, expressed as integrals themselves. They can be impossible to calculate exactly as our function can have an arbitrary shape (even for the periodic case) so we need at best to approximate them. Nowaday, computers alleviate this problem with great ease but this was not the case back in time. The Coradi analyzer is a sort of mechanical calculator (like the [Pascaline](https://en.wikipedia.org/wiki/Pascal%27s_calculator)) that aims at calculating the first coefficients of a Fourier series using directly as input the curve of our function.
+Fourier decompositions (in series or integral) are only powerful if we can compute with great precision these coefficients, expressed as integrals themselves. They can be impossible to calculate exactly as our function can have an arbitrary shape (even for the periodic case) so we need at best to approximate them. Nowadays, computers alleviate this problem with great ease but this was not the case back in time. 
+
+The Coradi analyzer is a sort of mechanical calculator (like the [Pascaline](https://en.wikipedia.org/wiki/Pascal%27s_calculator)) that aims at calculating the first coefficients of a Fourier series using directly as input the curve of our function.
+
+## Blabla
+
+Let's take a periodic function of period $$T$$ between $$0$$ and $$T$$ and scale it so it takes the whole span of the x-axis. That way, when sliding the carriage from one side to another, we go from $$x=0$$ to $$x=T$$.
+
+When doing this full slide, the bigger pulley makes one complete rotation, the second bigger makes two etc... More precisely, the n-th pulley have a rotation angle $$\theta_n = x\frac{2\pi n}{t}$$. For example, for $$n=1$$ (the bigger pulley), this angle goes from $$0$$ to $$2\pi$$ (a full rotation) when $$x=T$$.
+
+Now imagine we are at a certain value of $$x$$ and we make a small move $$dy$$ along the y-axis. This will first rotate the glass spheres by the same quantity $$dy$$. Now the dials will rotate differently, depending on their alignment which depends on angle $$theta$$. Therefore, the first dial will only make a final rotation of $$cos(\theta)dy$$ (at $$theta=0$$ the dial is built to be perfectly aligned with the sphere, having a move $$dy$$).
+
+If we sum all these infinitesial moves $$dy$$ along the whole procedure, we end ud with:
+
+$$s = \int_{x=0}^{T}cos(\theta)dy$$
+
+But we know the relation between $$x$$ and $$theta$$ for a given pulley of order $$n$$. Furthermore, if the little moves $$dy$$ along the y-axis are done following our function $$f$$ while increasing the $$x$$ value, we have the natural relation $$dy = f'(x)dx$$ where $$f'$$ is the first-order derivative of $$f$$. It comes:
+
+$$s = \int_0^Tcos(x\frac{2\pi n}{T})f'(x)dx$$
+
+An integration by parts gives:
+
+$$s == \left[cos(x\frac{2\pi n}{T}f(x)\right]_0^T - \int_0^Tcos'(x\frac{2\pi n}{T})f(x)dx = \int_0^Tsin(x\frac{2\pi n}{T})f(x)dx$$
 

@@ -39,7 +39,7 @@ The Coradi analyzer is a sort of mechanical calculator (like the [Pascaline](htt
 
 Let's take a periodic function of period $$T$$ between $$0$$ and $$T$$ and scale it so it takes the whole span of the x-axis. That way, when sliding the carriage from one side to another, we go from $$x=0$$ to $$x=T$$.
 
-When doing this full slide, the bigger pulley makes one complete rotation, the second bigger makes two etc... More precisely, the n-th pulley have a rotation angle $$\theta_n = x\frac{2\pi n}{t}$$. For example, for $$n=1$$ (the bigger pulley), this angle goes from $$0$$ to $$2\pi$$ (a full rotation) when $$x=T$$.
+When doing this full slide, the bigger pulley makes one complete rotation, the second bigger makes two etc... More precisely, the n-th pulley have a rotation angle $$\theta_n = x\frac{2n\pi}{T}$$. For example, for $$n=1$$ (the bigger pulley), this angle goes from $$0$$ to $$2\pi$$ (a full rotation) when $$x=T$$.
 
 Now imagine we are at a certain value of $$x$$ and we make a small move $$dy$$ along the y-axis. This will first rotate the glass spheres by the same quantity $$dy$$. Now the dials will rotate differently, depending on their alignment which depends on angle $$theta$$. Therefore, the first dial will only make a final rotation of $$cos(\theta)dy$$ (at $$theta=0$$ the dial is built to be perfectly aligned with the sphere, having a move $$dy$$).
 
@@ -49,9 +49,9 @@ $$s = \int_{x=0}^{T}cos(\theta)dy$$
 
 But we know the relation between $$x$$ and $$theta$$ for a given pulley of order $$n$$. Furthermore, if the little moves $$dy$$ along the y-axis are done following our function $$f$$ while increasing the $$x$$ value, we have the natural relation $$dy = f'(x)dx$$ where $$f'$$ is the first-order derivative of $$f$$. It comes:
 
-$$s = \int_0^Tcos(x\frac{2\pi n}{T})f'(x)dx$$
+$$s = \int_0^Tcos\left(x\frac{2n\pi}{T}\right)f'(x)dx$$
 
 An integration by parts gives:
 
-$$s == \left[cos(x\frac{2\pi n}{T}f(x)\right]_0^T - \int_0^Tcos'(x\frac{2\pi n}{T})f(x)dx = \int_0^Tsin(x\frac{2\pi n}{T})f(x)dx$$
+$$s = \left[cos\left(x\frac{2n\pi}{T}\right)f(x)\right]_0^T - \int_0^Tcos'\left(x\frac{2n\pi}{T}\right)f(x)dx = \int_0^Tsin\left(x\frac{2n\pi}{T}\right)f(x)dx$$
 
